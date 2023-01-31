@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addPlainNotes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.22/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="uk-container">
+        <h1>Añadir notas</h1>
+        <div class="uk-alert-danger" uk-alert>
+            <a class="uk-alert-close" uk-close></a>
+            <p>Por favor, ingrese texto</p>
+        </div>
+        <form id="formNotes">
+            <fieldset class="uk-fieldset">
+        
+                <legend class="uk-legend">Add:</legend>
+        
+                <div class="uk-margin">
+                    <input name="nombre" class="uk-input" type="text" placeholder="Ingresa tu nota" value="todo 1" aria-label="Input">
+                </div>
+                <p uk-margin>
+                    
+                    <button type="submit" class="uk-button uk-button-danger uk-button-large">Large button</button>
+                </p>  
+            </fieldset>
+        </form>
+    </div>
+    <div class="uk-container">
+        <dl class="uk-description-list uk-description-list-divider" id="NotesContainerAdd">
+            <!-- here notes-->     
+        </dl>
+    </div>
+    <template id="templateNotes">
+        <div class="notesContainer">
+            <div class="displayDiv">
+                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
+                <button class="uk-button uk-button-danger">Danger</button>
+            </div>
+        </div>   
+    </template>
+    <script src="./App.js"></script>
+    
+</body>
+</html>
